@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 118b7fed7bfd72c40b105cde4d5d01f2, type: 3}
+  m_Name: Sound Library
+  m_EditorClassIdentifier: 
+  soundOptionsDictionary:
+    serializedKvps:
+    - Key: JumpSound
+      Value: {fileID: 11400000, guid: 7aa9b2a1f5f001c498e321eb4361ce43, type: 2}
+      index: 0
+      isKeyRepeated: 0
+    - Key: RailGrind
+      Value: {fileID: 11400000, guid: 97741e903a1ae3a4791f1ae11725f29d, type: 2}
+      index: 1
+      isKeyRepeated: 0
+    - Key: Stomp
+      Value: {fileID: 11400000, guid: 8372634ac3b53a940aa99dc980c4ca86, type: 2}
+      index: 2
+      isKeyRepeated: 0
+    - Key: Footsteps
+      Value: {fileID: 11400000, guid: 24189c19abf0bb0489ffbe031926d2fa, type: 2}
+      index: 3
+      isKeyRepeated: 0
+    - Key: PlayerDamage
+      Value: {fileID: 11400000, guid: 5932573ceb133174a8dcd7a231be31dd, type: 2}
+      index: 4
+      isKeyRepeated: 0
+    - Key: EnemyDeath
+      Value: {fileID: 11400000, guid: f6cfaf654326ceb479a9c23c5367455c, type: 2}
+      index: 5
+      isKeyRepeated: 0
+    - Key: LevelIntro
+      Value: {fileID: 11400000, guid: b162c54855a68584d8963a232d0d5f4f, type: 2}
+      index: 6
+      isKeyRepeated: 0
+    - Key: LevelExit
+      Value: {fileID: 11400000, guid: 3d09496036b6e0a418e18614e7580c72, type: 2}
+      index: 7
+      isKeyRepeated: 0
+    - Key: BippiCall
+      Value: {fileID: 11400000, guid: 06de8598bab88734d92196a262cd6f7a, type: 2}
+      index: 8
+      isKeyRepeated: 0
+    - Key: TeleGrab
+      Value: {fileID: 11400000, guid: 3fc79ffbd4510f64c9d9749cae8105c2, type: 2}
+      index: 9
+      isKeyRepeated: 0
+    - Key: TeleThrow
+      Value: {fileID: 11400000, guid: 5edf8f4e948eeb74bbeae395d2a67656, type: 2}
+      index: 10
+      isKeyRepeated: 0
+    - Key: LevelCompleted
+      Value: {fileID: 11400000, guid: 95eb96fab58689f44a1b80be6679b7ed, type: 2}
+      index: 11
+      isKeyRepeated: 0
+    - Key: ObjectiveComplete
+      Value: {fileID: 11400000, guid: 0a81162519925c44a8a6e3ef9df37725, type: 2}
+      index: 12
+      isKeyRepeated: 0
+    - Key: ItemCollect
+      Value: {fileID: 11400000, guid: 978cc155457025d41822f69cdfe5c168, type: 2}
+      index: 13
+      isKeyRepeated: 0
+    dividerPos: 0.33

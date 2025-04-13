@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78ede1b19f6da56448f27bc087b38912, type: 3}
+  m_Name: Bunny Hop Start
+  m_EditorClassIdentifier: 
+  lines:
+  - character: {fileID: 11400000, guid: 0bde576c104c94449be379300f1b54b1, type: 2}
+    message: Have you tried jumping again, right as you land?
+  - character: {fileID: 11400000, guid: 0bde576c104c94449be379300f1b54b1, type: 2}
+    message: You'll get an extra burst of speed.
+  - character: {fileID: 11400000, guid: 0bde576c104c94449be379300f1b54b1, type: 2}
+    message: Thought you might need it, what with these platforms.

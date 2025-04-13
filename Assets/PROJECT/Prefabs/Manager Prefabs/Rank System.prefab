@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5847187511285837623
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6918267544859040698}
+  - component: {fileID: 729858715684282246}
+  m_Layer: 7
+  m_Name: Rank System
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6918267544859040698
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5847187511285837623}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &729858715684282246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5847187511285837623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e0b505f233e6448bfbdf3678d7b6e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <LevelRanks>k__BackingField:
+    serializedKvps:
+    - Key: 1
+      Value: 5
+      index: 0
+      isKeyRepeated: 0
+    - Key: 2
+      Value: 10
+      index: 1
+      isKeyRepeated: 0
+    - Key: 3
+      Value: 15
+      index: 2
+      isKeyRepeated: 0
+    dividerPos: 0.33
+  <RankColors>k__BackingField:
+    serializedKvps:
+    - Key: 1
+      Value: {r: 1, g: 0.27450982, b: 0.050980393, a: 0.5019608}
+      index: 0
+      isKeyRepeated: 0
+    - Key: 2
+      Value: {r: 0, g: 0.23529412, b: 1, a: 0.5019608}
+      index: 1
+      isKeyRepeated: 0
+    - Key: 3
+      Value: {r: 0, g: 1, b: 0.16078432, a: 0.5019608}
+      index: 2
+      isKeyRepeated: 0
+    - Key: 0
+      Value: {r: 0.30072978, g: 0.36703756, b: 0.5849056, a: 0.5019608}
+      index: 3
+      isKeyRepeated: 0
+    dividerPos: 0.33

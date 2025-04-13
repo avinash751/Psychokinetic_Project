@@ -1,0 +1,16 @@
+{
+  "name": "com.fronkongames.artistic.sharpen",
+  "version": "1.0.1",
+  "displayName": "Artistic: Sharpen",
+  "description": "Vibrant details, crisp images.",
+  "unity": "2021.3",
+  "unityRelease": "26f1",
+  "dependencies":  {  },
+  "keywords": [ "unity", "fps", "vr", "sharp", "sharpen", "CAS", "adaptive", "vibrant", "details", "crisp" ],
+  "author":
+  {
+    "name": "Fronkon Games",
+    "email": "fronkongames@gmail.com",
+    "url": "https://fronkongames.github.io/store/artistic.html"
+  }
+}

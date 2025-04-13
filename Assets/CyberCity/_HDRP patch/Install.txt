@@ -1,0 +1,2 @@
+- double click '_cyber square hdrp'
+- install hdrp: Window > Package Manager > hdrp

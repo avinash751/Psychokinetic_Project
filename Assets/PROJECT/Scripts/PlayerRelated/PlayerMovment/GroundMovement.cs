@@ -127,7 +127,7 @@ public class GroundMovement : PlayerMovement
         CamAndPlayerMoveDirection = Vector3.ProjectOnPlane(CamAndPlayerMoveDirection, hit.normal).normalized;
         CamAndPlayerMoveDirection.Set(CamAndPlayerMoveDirection.x, 0, CamAndPlayerMoveDirection.z);
 
-        if (Rb.velocity.y < 0)
+        if (Rb.linearVelocity.y < 0)
         {
             float slopeForcePercent = Mathf.InverseLerp(-90, 90, currentSlopeAngle);
             finalSlopeForce = FullDownSlopeGravity * slopeForcePercent;

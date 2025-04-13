@@ -56,11 +56,11 @@ public class PlayerAnimations : MonoBehaviour, IResettable
             return;
         }
 
-        if (prb.velocity.magnitude > threshold && velo < 1.0f)
+        if (prb.linearVelocity.magnitude > threshold && velo < 1.0f)
         {
             velo += Time.deltaTime * accelerate;
         }
-        else if (prb.velocity.magnitude <= threshold && velo > 0.0f)
+        else if (prb.linearVelocity.magnitude <= threshold && velo > 0.0f)
         {
             velo -= Time.deltaTime * slowdown;
         }

@@ -35,7 +35,7 @@ namespace FronkonGames.Artistic.OneBit
     {
       if (IsInRenderFeatures() == false)
       {
-        UniversalRenderPipelineAsset pipelineAsset = (UniversalRenderPipelineAsset)GraphicsSettings.renderPipelineAsset;
+        UniversalRenderPipelineAsset pipelineAsset = (UniversalRenderPipelineAsset)GraphicsSettings.defaultRenderPipeline;
         if (pipelineAsset != null)
         {
           FieldInfo propertyInfo = pipelineAsset.GetType().GetField(RenderListFieldName, bindingFlags);
@@ -65,7 +65,7 @@ namespace FronkonGames.Artistic.OneBit
     {
       if (IsInRenderFeatures() == true)
       {
-        UniversalRenderPipelineAsset pipelineAsset = (UniversalRenderPipelineAsset)GraphicsSettings.renderPipelineAsset;
+        UniversalRenderPipelineAsset pipelineAsset = (UniversalRenderPipelineAsset)GraphicsSettings.defaultRenderPipeline;
         if (pipelineAsset != null)
         {
           FieldInfo propertyInfo = pipelineAsset.GetType().GetField(RenderListFieldName, bindingFlags);
@@ -125,7 +125,7 @@ namespace FronkonGames.Artistic.OneBit
       {
         if (renderFeature == null)
         {
-          UniversalRenderPipelineAsset pipelineAsset = (UniversalRenderPipelineAsset)GraphicsSettings.renderPipelineAsset;
+          UniversalRenderPipelineAsset pipelineAsset = (UniversalRenderPipelineAsset)GraphicsSettings.defaultRenderPipeline;
           if (pipelineAsset != null)
           {
             FieldInfo propertyInfo = pipelineAsset.GetType().GetField(RenderListFieldName, bindingFlags);

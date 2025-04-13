@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  version: 7
+  version: 9
 --- !u!114 &-7103365619725430066
 MonoBehaviour:
   m_ObjectHideFlags: 11
@@ -38,9 +38,9 @@ Material:
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords:
+  m_ValidKeywords: []
+  m_InvalidKeywords:
   - _SCANLINE_MODE_WORLD_SPACE
-  m_InvalidKeywords: []
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 1
@@ -48,6 +48,7 @@ Material:
   stringTagMap: {}
   disabledShaderPasses:
   - ALWAYS
+  - MOTIONVECTORS
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
@@ -186,3 +187,4 @@ Material:
     - _SoftParticleFadeParams: {r: 0, g: 0, b: 0, a: 0}
     - _TintColor: {r: 0, g: 0.5019608, b: 1, a: 1}
   m_BuildTextureStacks: []
+  m_AllowLocking: 1

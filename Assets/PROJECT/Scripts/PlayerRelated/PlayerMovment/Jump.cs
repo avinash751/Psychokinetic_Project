@@ -97,7 +97,7 @@ public class Jump : PlayerMovement
         base.Start();
         jumpTimer.InitializeNormalStopWatch(durationOfJump);
         defaultGravity = gravityMultiplier;
-        defaultDrag = Rb.drag;
+        defaultDrag = Rb.linearDamping;
     }
 
     private void Update()
@@ -120,7 +120,7 @@ public class Jump : PlayerMovement
         {
             bool canJump = coyoteTimer.CountDownEnabled || verticalState is VerticalState.Grounded;
             if (!canJump) return;
-            Rb.velocity = new Vector3(Rb.velocity.x, 0, Rb.velocity.z);
+            Rb.linearVelocity = new Vector3(Rb.linearVelocity.x, 0, Rb.linearVelocity.z);
             if (bHopTimeWindowActivated)
             {
                 EventManager.Invoke(EventType.BunnyHop, GetType());
@@ -174,7 +174,7 @@ public class Jump : PlayerMovement
         }
         gravityMultiplier += Time.deltaTime * gravityAcceleration;
         Rb.AddForce(Vector3.down * gravityMultiplier, gravityForceType);
-        Rb.drag = defaultDrag / 1.5f;
+        Rb.linearDamping = defaultDrag / 1.5f;
     }
 
     private void GroundDetection()
@@ -226,6 +226,6 @@ public class Jump : PlayerMovement
     public void ResetDragAndGravity()
     {
         gravityMultiplier = defaultGravity;
-        Rb.drag = defaultDrag;
+        Rb.linearDamping = defaultDrag;
     }
 }

@@ -131,7 +131,7 @@ namespace FronkonGames.Artistic.OneBit
 
           if (GUILayout.Button("Use") == true)
           {
-            UniversalRenderPipelineAsset pipeline = ((UniversalRenderPipelineAsset)GraphicsSettings.renderPipelineAsset);
+            UniversalRenderPipelineAsset pipeline = ((UniversalRenderPipelineAsset)GraphicsSettings.defaultRenderPipeline);
             FieldInfo propertyInfo = pipeline.GetType().GetField("m_RendererDataList", BindingFlags.Instance | BindingFlags.NonPublic);
             if (propertyInfo != null)
             {

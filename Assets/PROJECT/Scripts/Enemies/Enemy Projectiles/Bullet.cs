@@ -12,6 +12,6 @@ public class Bullet : ProjectileBase
 
     void FixedUpdate()
     {
-        rb.velocity = transform.parent.transform.forward * speed;
+        rb.linearVelocity = transform.parent.transform.forward * speed;
     }
 }

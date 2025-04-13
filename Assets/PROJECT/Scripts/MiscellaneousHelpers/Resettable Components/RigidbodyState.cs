@@ -13,7 +13,7 @@ public class RigidbodyState : ComponentState
     {
         rb = component as Rigidbody;
         if (rb == null) { return; }
-        velocity = rb.velocity;
+        velocity = rb.linearVelocity;
         angularVelocity = rb.angularVelocity;
         kinematic = rb.isKinematic;
         rigidbodyConstraints = rb.constraints;
@@ -23,7 +23,7 @@ public class RigidbodyState : ComponentState
     public override void ResetState()
     {
         if (rb == null) { return; }
-        rb.velocity = velocity;
+        rb.linearVelocity = velocity;
         rb.angularVelocity = angularVelocity;
         rb.isKinematic = kinematic;
         rb.useGravity = gravity;

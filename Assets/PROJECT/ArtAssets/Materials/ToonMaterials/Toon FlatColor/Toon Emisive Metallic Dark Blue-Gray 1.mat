@@ -25,7 +25,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  version: 7
+  version: 9
 --- !u!21 &2100000
 Material:
   serializedVersion: 8
@@ -38,19 +38,20 @@ Material:
     type: 3}
   m_Parent: {fileID: 2100000, guid: 9991232d4d3de414fb9e632d64d54aab, type: 2}
   m_ModifiedSerializedProperties: 16
-  m_ValidKeywords:
-  - _SCANLINE_MODE_SCREEN_SPACE
-  - _USE_SLICE_GLITCHES
-  - _USE_VERTEX_GLITCHES
+  m_ValidKeywords: []
   m_InvalidKeywords:
   - _EMISSION
+  - _SCANLINE_MODE_SCREEN_SPACE
   - _SHADING_STYLE_HAIR_AND_METAL
+  - _USE_SLICE_GLITCHES
+  - _USE_VERTEX_GLITCHES
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: 5000
   stringTagMap: {}
-  disabledShaderPasses: []
+  disabledShaderPasses:
+  - MOTIONVECTORS
   m_LockedProperties: _ToonCutoffPoint
   m_SavedProperties:
     serializedVersion: 3
@@ -73,3 +74,4 @@ Material:
     - _EmissionColor: {r: 0.04538981, g: 0.047154754, b: 0.09433961, a: 1}
     - _SpecularColor: {r: 1, g: 0.99278444, b: 0.91132075, a: 1}
   m_BuildTextureStacks: []
+  m_AllowLocking: 1

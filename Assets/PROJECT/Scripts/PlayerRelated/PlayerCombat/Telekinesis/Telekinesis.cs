@@ -232,7 +232,7 @@ public class Telekinesis : MonoBehaviour, IResettable
             {
                 this.State = state;
                 obj.rb.constraints = RigidbodyConstraints.FreezeRotation;
-                obj.rb.velocity = Vector3.zero;
+                obj.rb.linearVelocity = Vector3.zero;
                 obj.transform.parent = orbitPosition;
             }
             else
@@ -271,7 +271,7 @@ public class Telekinesis : MonoBehaviour, IResettable
             float distanceFromDesired = (desiredPosition - currentObject.transform.position).magnitude;
             Vector3 centeringForceDirection = (desiredPosition - currentObject.transform.position).normalized;
             Vector3 centeringVelocity = distanceFromDesired * orbitSpeed * centeringForceDirection;
-            currentObject.rb.velocity = centeringVelocity + tangentialVelocity;
+            currentObject.rb.linearVelocity = centeringVelocity + tangentialVelocity;
             currentObject.transform.Rotate(orbitAxis, orbitSpeed);
             orbitAxis = Vector3.Lerp(orbitAxis, currentSteeringDirection, axisChangeSpeed * Time.fixedDeltaTime);
 

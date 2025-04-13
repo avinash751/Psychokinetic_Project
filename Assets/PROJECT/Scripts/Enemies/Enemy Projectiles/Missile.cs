@@ -11,7 +11,7 @@ public class Missile : ProjectileBase
 
     void Start()
     {
-        rb.velocity = transform.forward * speed;
+        rb.linearVelocity = transform.forward * speed;
     }
 
     void FixedUpdate()
@@ -26,13 +26,13 @@ public class Missile : ProjectileBase
             if (Vector3.Distance(transform.position, player.transform.position) <= stopHomingRange)
             {
                 isHoming = false;
-                rb.velocity = directionToTarget * straightSpeed;
+                rb.linearVelocity = directionToTarget * straightSpeed;
                 return;
             }
             Quaternion targetRotation = Quaternion.LookRotation(directionToTarget);
             transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, homingStrength * Time.fixedDeltaTime);
             Vector3 homingVelocity = directionToTarget * speed;
-            rb.velocity = homingVelocity;
+            rb.linearVelocity = homingVelocity;
         }
     }
 }

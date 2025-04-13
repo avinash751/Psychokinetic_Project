@@ -11,7 +11,7 @@ public static class PhysicsUtilities
             if (obj.TryGetComponent(out Rigidbody rb))
             {
                 //ApplyForces(rb, origin.position, radius, knockbackStrength, iterations);
-                float adjustedForce = knockbackStrength * Mathf.Max(rb.drag * dragOffset, 1);
+                float adjustedForce = knockbackStrength * Mathf.Max(rb.linearDamping * dragOffset, 1);
                 rb.AddExplosionForce(adjustedForce, origin.position, radius, 0, ForceMode.VelocityChange);
             }
         }
